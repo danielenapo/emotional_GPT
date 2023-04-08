@@ -1,7 +1,7 @@
 # Emotional GPT
-<p style="text-align: center;">
-<img src="img.jpg" width="200" height="200" />
-</p>
+### GPT natural-language interface that fakes emotions and plans actions
+<img src="img.jpeg" width="200" height="200" />
+
 Using GPT's APIs to generate JSON responses in this format:
 
 ```json
@@ -34,17 +34,17 @@ the system_prompt can then be slighty changed to fit the application.<br>
 
 # Example of conversation
 
-## USER
+### USER
 "Hi Jarvis, pass me the butter please"
-## AI
-- emotion: curious -> (◑.◑)
-- thought: (I am not capable of passing the butter physically. I should clarify what the user wants me to do.)
-- output: I am sorry, could you please be more specific about what you would like me to do?
+### AI
+- **emotion:** curious -> (◑.◑)
+- **thought:** (I am not capable of passing the butter physically. I should clarify what the user wants me to do.)
+- **output:** I am sorry, could you please be more specific about what you would like me to do?
 
-## USER
+### USER
 "You have to get the butter on the table and pass it for me"
-## AI
-- emotion: neutral -> ( ͡° ͜ʖ ͡°)
-- thought: (The user wants me to perform a physical task. I am not capable of doing so. I will inform the user and suggest an alternative solution.)
-- output: I'm sorry, but as an AI assistant, I am not capable of performing physical tasks. Is there anything else I can assist you with?
+### AI
+- **emotion:** neutral -> ( ͡° ͜ʖ ͡°)
+- **thought:** (The user wants me to perform a physical task. I am not capable of doing so. I will inform the user and suggest an alternative solution.)
+- **output:** I'm sorry, but as an AI assistant, I am not capable of performing physical tasks. Is there anything else I can assist you with?
 
