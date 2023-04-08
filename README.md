@@ -44,7 +44,12 @@ Get the API keys and insert them into the </a href="./keys.json" >keys.json</a> 
 }
 ```
 
-Then have fun with the test.ipynb notebook. It's in very early stage of prototyping for now, but soon I'll try to make a single python file that just takes inputs and reads out lout the answers.<br>
+Next, install the requirements:
+```bash
+pip install -r requirements.txt
+```
+
+Finally, have fun messing with the test.ipynb notebook. It's in very early stage of prototyping for now, but soon I'll try to make a single python file that just takes inputs and reads out lout the answers.<br>
 # Example of conversation
 
 ### USER
