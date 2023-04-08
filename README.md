@@ -31,7 +31,20 @@ state='{\
 ```
 the system_prompt can then be slighty changed to fit the application.<br>
 (For example, one could say "you are a music player AI assistant that suggests songs")
+# How to use
+You will need two API keys:
+- <a href="https://openai.com/blog/openai-api"> OpenAI </a> for the text generation. They give you 5$ credits for the first 3 months.
+- <a href="https://beta.elevenlabs.io/"> ElevenLabs </a> for the (scary realistic) Text To Speach. They also give 10000 free words per months.
 
+Get the API keys and insert them into the </a href="./keys.json" >keys.json</a> file:
+```json
+{
+  "openai": "your-openai-key-here",
+  "elevenlabs": "your-elevenlabs-key-here"
+}
+```
+
+Then have fun with the test.ipynb notebook. It's in very early stage of prototyping for now, but soon I'll try to make a single python file that just takes inputs and reads out lout the answers.<br>
 # Example of conversation
 
 ### USER
