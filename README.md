@@ -1,5 +1,7 @@
 # Emotional GPT
-![Emotional GPT](img.jpeg)
+<p style="text-align: center;">
+<img src="img.jpg" width="200" height="200" />
+</p>
 Using GPT's APIs to generate JSON responses in this format:
 
 ```json
