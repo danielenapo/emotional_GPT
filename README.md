@@ -1,6 +1,6 @@
-# Emotional GPT
+# Emotional GPT 🤖😯
 ### GPT natural-language interface that fakes emotions and plans actions
-<img src="img.jpeg" width="200" height="200" />
+<img src="media/img.jpeg" width="200" height="200" />
 
 Using GPT's APIs to generate JSON responses in this format:
 
@@ -11,12 +11,12 @@ Using GPT's APIs to generate JSON responses in this format:
   "output": "I'm doing the work you asked me to do."
 }
 ```
-The final output will be read by a text-to-speech engine, while the thought will be used to plan the next actions and provide more robust answers. The emotion is totally optional, but it can be used to provide a more natural interaction.
+The communications happens with the voice, and the final output will be read by a text-to-speech engine, while the thought will be used to plan the next actions and provide more robust answers. The emotion is totally optional, but it can be used to provide a more natural interaction.
 ## Why?
 GPTs are good at generating text. They represent a totally new way to interact with computers.<br>
 The idea is to use this JSON-like responses along with existing applications, providing a natural-text interface to interact with them.
 
-# Prompt engineering
+# Prompt engineering ✍️
 The base prompt is this:
 ```python
 system_prompt='You are Jarvis, an AI sentient assistant. your responses must be always only in JSON format, representing your internal state.\
@@ -32,16 +32,19 @@ state='{\
 ```
 the system_prompt can then be slighty changed to fit the application.<br>
 (For example, one could say "you are a music player AI assistant that suggests songs")
-# How to use
+
+# How to use 
 You will need two API keys:
 - <a href="https://openai.com/blog/openai-api"> OpenAI </a> for the text generation. They give you 5$ credits for the first 3 months.
-- <a href="https://beta.elevenlabs.io/"> ElevenLabs </a> for the (scary realistic) Text To Speach. They also give 10000 free words per months.
+- <a href="https://picovoice.ai/platform/porcupine"> Porcupine </a> for the wake word detection. They give 100 free listening hurs per month.
+- **OPTIONAL**: <a href="https://beta.elevenlabs.io/"> ElevenLabs </a> for the (scary realistic) Text To Speach. They also give 10000 free words per months. It's not mandatory since you can choose to use Google's free TTS instead (but it's much worse).
 
-Get the API keys and insert them into the </a href="./keys.json" >keys.json</a> file:
+Get the API keys and insert them into the <a href="./keys.json">keys.json</a> file:
 ```json
 {
   "openai": "your-openai-key-here",
   "elevenlabs": "your-elevenlabs-key-here"
+  "porcupine": "your-pocupine-key-here"
 }
 ```
 
@@ -51,7 +54,8 @@ pip install -r requirements.txt
 ```
 
 Finally, have fun messing with the test.ipynb notebook. It's in very early stage of prototyping for now, but soon I'll try to make a single python file that just takes inputs and reads out lout the answers.<br>
-# Example of conversation
+
+# Example of conversation 🗣️
 
 ```txt
 ( ͡° ͜ʖ ͡°)
@@ -92,4 +96,8 @@ AI:
 ( ͡° ͜ʖ ͡°)
 (Looks like the user wants to exit. I'll gracefully conclude our conversation.)
 Thank you for using my services. Have a great day!
-```
+``` 
+# To Do 📑
+☑️ Enabling _retrieval-augmented GQA_ using Pinecone (yet another API :P), for long term memory, storing the complete history of states in a vecor database.<br>
+☑️ Better UI (maybe some animations for the faces)<br>
+☑️ Magnitute of emotion (e.g. a scale from 1 to 5 for each emotion)
