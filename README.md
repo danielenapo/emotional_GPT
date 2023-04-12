@@ -11,7 +11,7 @@ Using GPT's APIs to generate JSON responses in this format:
   "output": "I'm doing the work you asked me to do."
 }
 ```
-The communications happens with the voice, and the final output will be read by a text-to-speech engine, while the thought will be used to plan the next actions and provide more robust answers. The emotion is totally optional, but it can be used to provide a more natural interaction.
+The communications happens through voice (Speech to Text, then Text to Speech). It can show a set of given emotions (like happy, angry, curious), while the thought will be used to plan the next actions and provide more robust answers. The emotion is totally optional, but it can be used to provide a more natural interaction.
 ## Why?
 GPTs are good at generating text. They represent a totally new way to interact with computers.<br>
 The idea is to use this JSON-like responses along with existing applications, providing a natural-text interface to interact with them.
