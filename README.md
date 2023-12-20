@@ -1,5 +1,5 @@
 # Emotional GPT 🤖😯
-### GPT natural-language interface that fakes emotions and plans actions
+### GPT natural-language interface that fakes emotions and plans actions. Those are just some experiments with the Chain of Though technique with the OpenAI API.
 <img src="media/img.jpeg" width="200" height="200" />
 
 Using GPT's APIs to generate JSON responses in this format:
